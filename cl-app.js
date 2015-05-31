@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 var tureng = require('./tureng.js');
 tureng(process.argv[2], function(data) {
 	data.categories.forEach(function (category) {
