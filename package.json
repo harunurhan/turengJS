@@ -1,6 +1,6 @@
 {
   "name": "turengjs",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "private": false,
   "dependencies": {
     "cheerio": "*",
@@ -10,10 +10,10 @@
   "license": "MIT",
   "preferGlobal": true,
   "bin": {
-    "tureng": "./cl-app"
+    "tureng": "cl-app.js"
   },
   "description": "This is an unofficial node module and command line tool for tureng.com. It allows search a turkish-english word from your node app and command line (must be installed globally)",
-  "main": "./tureng",
+  "main": "tureng.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
