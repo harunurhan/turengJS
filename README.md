@@ -22,9 +22,9 @@ Since, tureng.com does not provide an open API. It uses [request](https://github
 
 ### Usage
 
-as a command line: `$ tureng <word>`
+as a command line tool: `$ tureng <word>`
 
-as a module
+as a module tool
 
 ~~~
 var tureng = require('./tureng.js');
