@@ -10,10 +10,10 @@
   "license": "MIT",
   "preferGlobal": true,
   "bin": {
-    "tureng": "cl-app.js"
+    "tureng": "./cl-app"
   },
   "description": "This is an unofficial node module and command line tool for tureng.com. It allows search a turkish-english word from your node app and command line (must be installed globally)",
-  "main": "cl-app.js",
+  "main": "./tureng",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
