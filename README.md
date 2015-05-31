@@ -27,7 +27,7 @@ as a command line tool: `$ tureng <word>`
 as a module:
 
 ~~~
-var tureng = require('./tureng.js');
+var tureng = require('turengjs');
 tureng('a word', function(data) {
     // do sometihng with data
 });
