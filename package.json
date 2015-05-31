@@ -1,0 +1,15 @@
+{
+  "name": "turengJS",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "cheerio": "*",
+    "request": "*"
+  },
+  "author": "Harun Urhan",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "tureng": "cl-app.js"
+  }
+}
