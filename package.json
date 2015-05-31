@@ -12,7 +12,7 @@
   "bin": {
     "tureng": "cl-app.js"
   },
-  "description": "This is an unofficial node module and command line tool for tureng.com. It allows search a turkish-english word from your node app and command line (must be installed globally)",
+  "description": "This is an unofficial node module and command line tool for tureng.com. It allows to search a turkish-english word from your node app and command line (must be installed globally)",
   "main": "tureng.js",
   "devDependencies": {},
   "scripts": {

@@ -6,7 +6,7 @@
 
 /**
  * Requests tureng.com and parses results
- * @param {string} path
+ * @param {string} word
  * @param {completionCallback} callback
  */
 module.exports = function(word, callback) {
