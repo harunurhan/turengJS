@@ -28,8 +28,10 @@ as a module:
 
 ~~~
 var tureng = require('turengjs');
-tureng('a word', function(data) {
-    // do sometihng with data
+tureng('a word', function(error, data) {
+    if(!error) {
+      // do sometihng with data
+    }
 });
 ~~~
 
