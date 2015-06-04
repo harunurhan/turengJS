@@ -1,6 +1,7 @@
 /**
  * Called after results are collected
  * @callback comletionCallback
+ * @param {Object} error
  * @param {Object} data
  */
 
@@ -45,8 +46,13 @@ module.exports = function(word, callback) {
           categoryName = tr.text().trim();
         }
       });
-      categories.push({name: categoryName, results: categoryResults}); // push last category
-      callback({categories: categories});
+      if(categoryName) {// match found for any category
+        categories.push({name: categoryName, results: categoryResults}); // push last category
+        callback(null, {categories: categories});
+      } else {
+        callback({message: 'No match found'});
+      }
+      
     }
   });
 };
