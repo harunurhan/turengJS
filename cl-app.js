@@ -1,16 +1,19 @@
 #! /usr/bin/env node
-var tureng = require('./tureng.js');
+var tureng = require('./tureng.js'),
+	Table  = require('cli-table');
 tureng(process.argv[2], function(error, data) {
+	var table = new Table({
+		head:['Category','English','Turkish'],
+		colWidths: [20,20,20]
+	}) ;
 	if(error) {
-		console.log(error.message);
+		table.push([error.message, '']);
 	} else {
 		data.categories.forEach(function (category) {
-			console.log('\n' + category.name);
 			category.results.forEach(function (result) {
-				console.log(result.type + ' ' +
-							result.english + ' ' +
-							result.turkish);
+				table.push([category.name ,result.type +' '+ result.english, result.turkish]);
 			});
 		});
 	}
+	console.log(table.toString());
 });
