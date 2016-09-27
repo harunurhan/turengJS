@@ -4,7 +4,8 @@
   "private": false,
   "dependencies": {
     "cheerio": "*",
-    "request": "*"
+    "request": "*",
+    "cli-table": "^0.3.1"
   },
   "author": "Harun Urhan",
   "license": "MIT",
